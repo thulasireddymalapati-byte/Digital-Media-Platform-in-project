@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MediaHub - Digital Media Platform</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ==== NAVBAR === -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+    <div class="container">
+
+        <a class="navbar-brand fw-bold fs-3" href="index.html">
+            <i class="bi bi-play-circle-fill"></i>
+            MediaHub
+        </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="news.html">
+                        News
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="videos.html">
+                        Videos
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-7">
+
+                <span class="badge bg-primary mb-3">
+                    DIGITAL MEDIA PLATFORM
+                </span>
+
+                <h1>
+                    Discover the Latest
+                    <span>Stories & Media</span>
+                </h1>
+
+                <p>
+                    Stay updated with the latest news, trending stories,
+                    technology, entertainment and videos all in one place.
+                </p>
+
+                <a href="news.html"
+                   class="btn btn-primary btn-lg me-2">
+
+                    Explore News
+
+                </a>
+
+                <a href="videos.html"
+                   class="btn btn-outline-light btn-lg">
+
+                    Watch Videos
+
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-5 text-center">
+
+                <div class="hero-icon">
+
+                    <i class="bi bi-camera-reels-fill"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH ================= -->
+
+<section class="search-area">
+
+    <div class="container">
+
+        <div class="search-box">
+
+            <h3 class="text-center mb-4">
+                Search Media
+            </h3>
+
+            <div class="row g-2">
+
+                <div class="col-md-9">
+
+                    <input
+                        type="text"
+                        id="homeSearch"
+                        class="form-control form-control-lg"
+                        placeholder="Search news, technology, sports...">
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <button
+                        onclick="homeSearch()"
+                        class="btn btn-primary btn-lg w-100">
+
+                        <i class="bi bi-search"></i>
+                        Search
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Explore Categories
+            </h2>
+
+            <p>
+                Browse content based on your interests.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+            <div class="col-md-3">
+
+                <div class="category-card">
+
+                    <i class="bi bi-cpu"></i>
+
+                    <h4>Technology</h4>
+
+                    <p>
+                        Latest technology news and updates.
+                    </p>
+
+                    <a href="news.html?category=Technology">
+                        Explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="category-card">
+
+                    <i class="bi bi-trophy"></i>
+
+                    <h4>Sports</h4>
+
+                    <p>
+                        Latest sports news and highlights.
+                    </p>
+
+                    <a href="news.html?category=Sports">
+                        Explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="category-card">
+
+                    <i class="bi bi-film"></i>
+
+                    <h4>Entertainment</h4>
+
+                    <p>
+                        Movies, music and entertainment.
+                    </p>
+
+                    <a href="news.html?category=Entertainment">
+                        Explore
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-3">
+
+                <div class="category-card">
+
+                    <i class="bi bi-globe"></i>
+
+                    <h4>World</h4>
+
+                    <p>
+                        Important stories from around the world.
+                    </p>
+
+                    <a href="news.html?category=World">
+                        Explore
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= TRENDING NEWS ================= -->
+
+<section class="bg-light py-5">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Trending Stories
+            </h2>
+
+            <p>
+                Popular stories on MediaHub
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- Card 1 -->
+
+            <div class="col-md-4">
+
+                <div class="news-card">
+
+                    <div class="news-image tech-image">
+
+                        <i class="bi bi-cpu"></i>
+
+                    </div>
+
+                    <div class="news-content">
+
+                        <span class="badge bg-primary">
+                            Technology
+                        </span>
+
+                        <h4>
+                            The Future of Artificial Intelligence
+                        </h4>
+
+                        <p>
+                            Discover how AI is changing the way
+                            people work and communicate.
+                        </p>
+
+                        <a href="news.html">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 2 -->
+
+            <div class="col-md-4">
+
+                <div class="news-card">
+
+                    <div class="news-image sports-image">
+
+                        <i class="bi bi-trophy"></i>
+
+                    </div>
+
+                    <div class="news-content">
+
+                        <span class="badge bg-success">
+                            Sports
+                        </span>
+
+                        <h4>
+                            Latest Sports Highlights
+                        </h4>
+
+                        <p>
+                            Get the latest sports updates,
+                            results and highlights.
+                        </p>
+
+                        <a href="news.html">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Card 3 -->
+
+            <div class="col-md-4">
+
+                <div class="news-card">
+
+                    <div class="news-image entertainment-image">
+
+                        <i class="bi bi-film"></i>
+
+                    </div>
+
+                    <div class="news-content">
+
+                        <span class="badge bg-danger">
+                            Entertainment
+                        </span>
+
+                        <h4>
+                            Entertainment News Today
+                        </h4>
+
+                        <p>
+                            Latest movie, music and celebrity
+                            updates from the industry.
+                        </p>
+
+                        <a href="news.html">
+                            Read More →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= VIDEO SECTION ================= -->
+
+<section class="py-5">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <h2>
+                Featured Videos
+            </h2>
+
+            <p>
+                Watch our latest video content.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-md-4">
+
+                <div class="video-card">
+
+                    <div class="video-thumbnail">
+
+                        <i class="bi bi-play-circle-fill"></i>
+
+                    </div>
+
+                    <div class="p-3">
+
+                        <h5>
+                            Technology Explained
+                        </h5>
+
+                        <p>
+                            Learn about modern technology.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="video-card">
+
+                    <div class="video-thumbnail">
+
+                        <i class="bi bi-play-circle-fill"></i>
+
+                    </div>
+
+                    <div class="p-3">
+
+                        <h5>
+                            Sports Highlights
+                        </h5>
+
+                        <p>
+                            Watch the latest sports highlights.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="video-card">
+
+                    <div class="video-thumbnail">
+
+                        <i class="bi bi-play-circle-fill"></i>
+
+                    </div>
+
+                    <div class="p-3">
+
+                        <h5>
+                            Entertainment Weekly
+                        </h5>
+
+                        <p>
+                            Weekly entertainment updates.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="text-center mt-4">
+
+            <a href="videos.html"
+               class="btn btn-primary">
+
+                View All Videos
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <h4>
+                    <i class="bi bi-play-circle-fill"></i>
+                    MediaHub
+                </h4>
+
+                <p>
+                    Your digital destination for news,
+                    entertainment, sports and technology.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-6 text-md-end">
+
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-youtube"></i>
+                </a>
+
+                <a href="#">
+                    <i class="bi bi-twitter-x"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="text-center mb-0">
+
+            © 2026 MediaHub. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JS -->
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+<!-- Custom JS -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
